@@ -50,7 +50,8 @@ figure,figcaption,div,img, figure, footer{
 		justify-content: center;
 		height: 60px;
 		flex-basis: 120px;
-		padding-top: 40px;
+		padding-top: 95px;
+		padding-bottom: 15px;
 	}
 
 	footer button{
@@ -117,10 +118,10 @@ figure,figcaption,div,img, figure, footer{
 		display: none;
 	}
 
-	@media (max-width:768px){
+	@media (max-width:900px){
 		.pg-home__usuarios {
 			height: 500px;
-			width: 500px;
+			width: 425px;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
@@ -130,7 +131,7 @@ figure,figcaption,div,img, figure, footer{
 		}
 
 		.pg-home header{
-			font-size: 2em;
+			font-size: 1.6em;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -142,4 +143,6 @@ figure,figcaption,div,img, figure, footer{
 			align-items: center;
 			justify-content: center;
 		}
+
+		
 	}
