@@ -14,25 +14,132 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
+/* RESET */
+
+body,
+h1,h2,h3,h4,ul,ol,li,
+figure,figcaption,div,img, figure, footer{
+  margin: 0;
+  border:0;
+  padding:0;
+  list-style: none;
+}
+
 /* VARIÁVEIS */
 :root{
-  
-}
+	--background-color: #00002e;
+	--font-color:white;
+	}
 
 /*BODY*/
 	body{
-
-	}
+		background-color: var(--background-color);
+		font-family:  'Helvetica Neue',Helvetica,Arial,sans-serif;
+	}	
 
 /*TOPO*/
 	header.topo{
+		justify-content: flex-start;
 		
 	}
 
+
 /*RODAPÉ*/
-	
+	footer{
+		display: flex;
+		justify-content: center;
+		height: 60px;
+		flex-basis: 120px;
+		padding-top: 40px;
+	}
+
+	footer button{
+		border: 1px solid white;
+		width: 170px;
+		color: var(--font-color);
+		background-color: var(--background-color)
+	}
+
+	footer button:hover{
+		box-shadow:3px 2px 5px 0px rgba(255, 255, 255, 0.93);
+	}
 
 /*PÁGINA INICIAL*/
 	div.pg-home{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+
+	.pg-home header{
+		font-size: 3em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 40px;
+		padding-top: 60px;
+	}
+
+	h2, h3{
+		color: var(--font-color);
+	}
+
+	.pg-home__usuarios{
+		width: 858px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: space-between;
 		
+	}
+
+	.pg-home__usuarios img{
+		padding:0px;
+		width: 186px;
+	}
+
+	.pg-home__usuarios img:hover {
+		box-shadow:3px 2px 5px 0px rgba(255, 255, 255, 0.93);
+	}
+
+	.pg-home__usuarios h3{
+		display: flex;
+		justify-content: center;
+	}
+
+
+	figcaption{
+		display: none;
+	}
+
+	@media (max-width:768px){
+		.pg-home__usuarios {
+			height: 500px;
+			width: 500px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+			align-content: space-between;
+		}
+
+		.pg-home header{
+			font-size: 2em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		header.topo{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			justify-content: center;
+		}
 	}
